@@ -200,9 +200,13 @@ function createShortCard(short) {
     card.className = 'short-card';
     card.innerHTML = `
         <div class="short-thumbnail">
-            <img src="${short.thumbnail}" alt="${short.title}" onerror="this.src='data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"350\" viewBox=\"0 0 280 350\"><rect width=\"280\" height=\"350\" fill=\"%23ff0000\"/><text x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"white\" font-size=\"24\">YouTube</text></svg>'">
+            <img src="${short.thumbnail}" alt="${short.title}" onerror="this.style.display='none'; this.nextElementSibling.nextElementSibling.style.display='flex';">
             <div class="play-overlay">
                 <i class="fas fa-play"></i>
+            </div>
+            <div class="thumbnail-fallback" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary-color); color: white; justify-content: center; align-items: center; flex-direction: column; border-radius: 12px;">
+                <i class="fab fa-youtube" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                <span style="font-size: 1rem; font-weight: 600;">YouTube Short</span>
             </div>
         </div>
         <div class="short-info">
