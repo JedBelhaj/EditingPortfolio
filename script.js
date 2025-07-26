@@ -1,76 +1,100 @@
-// YouTube Shorts data array - Add your YouTube Shorts links here
+// YouTube Shorts data array - Jed B.'s actual YouTube Shorts
 const youtubeShorts = [
     {
         id: 1,
-        title: "Amazing Creative Short #1",
-        description: "This is an amazing creative short that showcases incredible content and storytelling.",
-        videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-        thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg", // Auto-generated thumbnail
-        views: "10K",
-        likes: "250",
-        duration: "0:30",
+        title: "Epic Gaming Montage",
+        description: "An epic gaming montage showcasing the best moments and incredible gameplay highlights.",
+        videoId: "99dSedqep6U",
+        thumbnail: "https://img.youtube.com/vi/99dSedqep6U/maxresdefault.jpg",
+        views: "12.5K",
+        likes: "340",
+        duration: "0:58",
         category: "trending",
         uploadDate: "2025-01-15"
     },
     {
         id: 2,
-        title: "Epic Moment Compilation",
-        description: "A compilation of the most epic moments captured in this incredible short video.",
-        videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-        thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        views: "25K",
-        likes: "500",
-        duration: "0:45",
+        title: "Creative Editing Showcase",
+        description: "Demonstrating advanced video editing techniques and creative transitions in this short.",
+        videoId: "n-mz8Bmad7I",
+        thumbnail: "https://img.youtube.com/vi/n-mz8Bmad7I/maxresdefault.jpg",
+        views: "8.2K",
+        likes: "195",
+        duration: "0:42",
         category: "featured",
         uploadDate: "2025-01-10"
     },
     {
         id: 3,
-        title: "Quick Tutorial Tips",
-        description: "Learn something new in under a minute with these quick and easy tips.",
-        videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-        thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        views: "15K",
-        likes: "320",
-        duration: "0:55",
+        title: "Behind the Scenes",
+        description: "Take a look behind the scenes of my video production process and editing workflow.",
+        videoId: "bo45r6zF8uw",
+        thumbnail: "https://img.youtube.com/vi/bo45r6zF8uw/maxresdefault.jpg",
+        views: "15.7K",
+        likes: "420",
+        duration: "1:15",
         category: "latest",
         uploadDate: "2025-01-20"
     },
     {
         id: 4,
-        title: "Behind the Scenes",
-        description: "Get an exclusive look behind the scenes of content creation process.",
-        videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-        thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        views: "8K",
-        likes: "180",
-        duration: "1:00",
+        title: "Quick Edit Tutorial",
+        description: "Learn essential video editing tips and tricks in under a minute with this quick tutorial.",
+        videoId: "xttaEDt5CIo",
+        thumbnail: "https://img.youtube.com/vi/xttaEDt5CIo/maxresdefault.jpg",
+        views: "22.1K",
+        likes: "680",
+        duration: "0:55",
         category: "featured",
         uploadDate: "2025-01-18"
     },
     {
         id: 5,
-        title: "Trending Challenge",
-        description: "Participating in the latest trending challenge with a unique twist.",
-        videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-        thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        views: "30K",
-        likes: "750",
-        duration: "0:35",
+        title: "Trending Effects Demo",
+        description: "Showcasing the latest trending video effects and how to achieve them in your edits.",
+        videoId: "L3y4SqHlD9o",
+        thumbnail: "https://img.youtube.com/vi/L3y4SqHlD9o/maxresdefault.jpg",
+        views: "18.9K",
+        likes: "525",
+        duration: "0:48",
         category: "trending",
         uploadDate: "2025-01-12"
     },
     {
         id: 6,
-        title: "Creative Experiment",
-        description: "Trying out a new creative technique and sharing the results with you.",
-        videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-        thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        views: "12K",
-        likes: "290",
-        duration: "0:50",
+        title: "Color Grading Magic",
+        description: "Transform your videos with professional color grading techniques demonstrated step by step.",
+        videoId: "ajG13T64tmM",
+        thumbnail: "https://img.youtube.com/vi/ajG13T64tmM/maxresdefault.jpg",
+        views: "14.3K",
+        likes: "380",
+        duration: "1:02",
         category: "latest",
         uploadDate: "2025-01-22"
+    },
+    {
+        id: 7,
+        title: "Motion Graphics Breakdown",
+        description: "Breaking down complex motion graphics and explaining the creative process behind them.",
+        videoId: "b_GNmfdGqzM",
+        thumbnail: "https://img.youtube.com/vi/b_GNmfdGqzM/maxresdefault.jpg",
+        views: "11.8K",
+        likes: "295",
+        duration: "0:52",
+        category: "featured",
+        uploadDate: "2025-01-14"
+    },
+    {
+        id: 8,
+        title: "Latest Project Showcase",
+        description: "Showcasing my latest video editing project with advanced techniques and creative storytelling.",
+        videoId: "0sifoBolr7E",
+        thumbnail: "https://img.youtube.com/vi/0sifoBolr7E/maxresdefault.jpg",
+        views: "9.6K",
+        likes: "245",
+        duration: "1:08",
+        category: "latest",
+        uploadDate: "2025-01-25"
     }
 ];
 
@@ -79,17 +103,17 @@ let currentFilter = 'all';
 let currentlyDisplayed = 6;
 const shortsPerLoad = 6;
 
-// DOM elements
-const shortsGrid = document.getElementById('shortsGrid');
-const loadMoreBtn = document.getElementById('loadMoreBtn');
-const filterBtns = document.querySelectorAll('.filter-btn');
-const videoModal = document.getElementById('videoModal');
-const modalClose = document.getElementById('modalClose');
-const modalIframe = document.getElementById('modalIframe');
-const modalTitle = document.getElementById('modalTitle');
-const modalDescription = document.getElementById('modalDescription');
-const modalViews = document.getElementById('modalViews');
-const modalLikes = document.getElementById('modalLikes');
+// DOM elements - will be set after DOM loads
+let shortsGrid;
+let loadMoreBtn;
+let filterBtns;
+let videoModal;
+let modalClose;
+let modalIframe;
+let modalTitle;
+let modalDescription;
+let modalViews;
+let modalLikes;
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -97,6 +121,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeApp() {
+    // Initialize DOM elements after DOM is loaded
+    shortsGrid = document.getElementById('shortsGrid');
+    loadMoreBtn = document.getElementById('loadMoreBtn');
+    filterBtns = document.querySelectorAll('.filter-btn');
+    videoModal = document.getElementById('videoModal');
+    modalClose = document.getElementById('modalClose');
+    modalIframe = document.getElementById('modalIframe');
+    modalTitle = document.getElementById('modalTitle');
+    modalDescription = document.getElementById('modalDescription');
+    modalViews = document.getElementById('modalViews');
+    modalLikes = document.getElementById('modalLikes');
+    
+    // Debug: Check if elements exist
+    console.log('DOM Elements:', {
+        shortsGrid: !!shortsGrid,
+        loadMoreBtn: !!loadMoreBtn,
+        filterBtns: filterBtns.length,
+        videoModal: !!videoModal
+    });
+    
+    if (!shortsGrid) {
+        console.error('shortsGrid element not found!');
+        return;
+    }
+    
     renderShorts();
     setupEventListeners();
     setupScrollAnimations();
@@ -106,36 +155,49 @@ function initializeApp() {
 
 // Render shorts based on current filter
 function renderShorts() {
-    const filteredShorts = getFilteredShorts();
-    const shortsToShow = filteredShorts.slice(0, currentlyDisplayed);
-    
-    shortsGrid.innerHTML = '';
-    
-    shortsToShow.forEach((short, index) => {
-        const shortCard = createShortCard(short);
-        shortCard.style.animationDelay = `${index * 0.1}s`;
-        shortsGrid.appendChild(shortCard);
-    });
-    
-    // Show/hide load more button
-    if (currentlyDisplayed >= filteredShorts.length) {
-        loadMoreBtn.style.display = 'none';
-    } else {
-        loadMoreBtn.style.display = 'inline-flex';
+    if (!shortsGrid) {
+        console.error('shortsGrid not available for rendering');
+        return;
     }
     
-    // Add reveal animation to new cards
-    setTimeout(() => {
-        document.querySelectorAll('.short-card').forEach(card => {
-            card.classList.add('fade-in');
+    const filteredShorts = getFilteredShorts();
+    
+    // Ensure we don't try to show more shorts than available
+    const maxToShow = Math.min(currentlyDisplayed, filteredShorts.length);
+    const shortsToShow = filteredShorts.slice(0, maxToShow);
+    
+    // Clear existing content
+    shortsGrid.innerHTML = '';
+    
+    // Always show at least the available shorts, even if less than expected
+    if (shortsToShow.length === 0) {
+        shortsGrid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--text-secondary);">
+                <i class="fas fa-video" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                <p>No shorts found in this category.</p>
+            </div>
+        `;
+    } else {
+        shortsToShow.forEach((short, index) => {
+            const shortCard = createShortCard(short);
+            shortsGrid.appendChild(shortCard);
         });
-    }, 100);
+    }
+    
+    // Show/hide load more button based on available shorts
+    if (loadMoreBtn) {
+        if (maxToShow >= filteredShorts.length || filteredShorts.length === 0) {
+            loadMoreBtn.style.display = 'none';
+        } else {
+            loadMoreBtn.style.display = 'inline-flex';
+        }
+    }
 }
 
 // Create individual short card
 function createShortCard(short) {
     const card = document.createElement('div');
-    card.className = 'short-card reveal';
+    card.className = 'short-card';
     card.innerHTML = `
         <div class="short-thumbnail">
             <img src="${short.thumbnail}" alt="${short.title}" onerror="this.src='data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"350\" viewBox=\"0 0 280 350\"><rect width=\"280\" height=\"350\" fill=\"%23ff0000\"/><text x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"white\" font-size=\"24\">YouTube</text></svg>'">
@@ -165,7 +227,7 @@ function createShortCard(short) {
 // Get filtered shorts based on current filter
 function getFilteredShorts() {
     if (currentFilter === 'all') {
-        return youtubeShorts;
+        return [...youtubeShorts]; // Return a copy to avoid mutations
     }
     return youtubeShorts.filter(short => short.category === currentFilter);
 }
@@ -196,6 +258,11 @@ function closeVideoModal() {
 
 // Setup event listeners
 function setupEventListeners() {
+    if (!filterBtns || filterBtns.length === 0) {
+        console.error('Filter buttons not found');
+        return;
+    }
+    
     // Filter buttons
     filterBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -206,22 +273,25 @@ function setupEventListeners() {
             
             // Update current filter
             currentFilter = e.target.dataset.filter;
-            currentlyDisplayed = shortsPerLoad;
             
-            // Re-render shorts with animation
-            shortsGrid.style.opacity = '0';
-            setTimeout(() => {
-                renderShorts();
-                shortsGrid.style.opacity = '1';
-            }, 200);
+            // Reset to show initial amount for new filter
+            const filteredShorts = getFilteredShorts();
+            currentlyDisplayed = Math.max(shortsPerLoad, filteredShorts.length > 0 ? shortsPerLoad : 0);
+            
+            // Re-render shorts without animation
+            renderShorts();
         });
     });
     
     // Load more button
-    loadMoreBtn.addEventListener('click', () => {
-        currentlyDisplayed += shortsPerLoad;
-        renderShorts();
-    });
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            const filteredShorts = getFilteredShorts();
+            const newDisplayed = Math.min(currentlyDisplayed + shortsPerLoad, filteredShorts.length);
+            currentlyDisplayed = newDisplayed;
+            renderShorts();
+        });
+    }
     
     // Modal close events
     modalClose.addEventListener('click', closeVideoModal);
